@@ -24,63 +24,72 @@ document.querySelectorAll('.al-faq__item').forEach((el) => {
 
 
 /*----------Production----------*/
-const initProductionAccordion = () => {
-    const isMobile = window.innerWidth <= 767;
+document.querySelectorAll('.al-production-item').forEach((el) => {
 
-    document.querySelectorAll('.al-production__item').forEach((el) => {
-        const content = el.querySelector('.al-production__item-content');
-        const plus = el.querySelector('.al-production__plus-img');
-        const plusWrapper = el.querySelector('.al-production__plus');
+    let content = el.querySelector('.al-production-text-wrapper');
+    let plus = el.querySelector('.al-production-plus-img');
 
-        // Удалим все предыдущие обработчики, добавляя флаг-атрибут
-        el.replaceWith(el.cloneNode(true)); // Быстрое "очищение" обработчиков
-    });
+    if (window.innerWidth < 768) {
+        plus.classList.remove('active');
+        content.style.cssText = `overflow: hidden `;
 
-    document.querySelectorAll('.al-production__item').forEach((el) => {
-        const content = el.querySelector('.al-production__item-content');
-        const plus = el.querySelector('.al-production__plus-img');
-        const plusWrapper = el.querySelector('.al-production__plus');
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
 
-        if (isMobile) {
-            // Начальное состояние для мобилок
-            content.classList.remove('active');
-            content.style.cssText = `overflow: hidden; max-height: 0; transition: max-height 0.2s ease;`;
-            plus.style.transform = 'rotate(0deg)';
-            plusWrapper.style.alignItems = 'center';
+            content.classList.toggle('active');
 
-            el.addEventListener('click', () => {
-                const isActive = content.classList.toggle('active');
-                if (isActive) {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                    plus.style.transform = 'rotate(-0.38turn)';
-                    plusWrapper.style.alignItems = 'flex-end';
-                } else {
-                    content.style.maxHeight = '0px';
-                    plus.style.transform = 'rotate(0deg)';
-                    plusWrapper.style.alignItems = 'center';
+            if (content.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + "px";
+                el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(-0.38turn);`;
+                el.querySelector('.al-production-plus').style.cssText = `align-items: end;`;
+            }
+            else {
+                el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(0deg); `;
+                el.querySelector('.al-production-plus').style.cssText = `align-items: center;`;
+                content.style.cssText = `overflow: hidden;`;
+                content.style.maxHeight = "0px";
+            }
+        })
+    }
+
+    if (window.innerWidth >= 768) {
+        plus.classList.add('active');
+        content.style.cssText = `overflow: visible `;
+        content.style.cssText = `transition: none`;
+    }
+
+    window.addEventListener('resize', () => {
+
+        if (window.innerWidth < 768) {
+            plus.classList.remove('active');
+            content.style.cssText = `overflow: hidden `;
+
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                content.classList.toggle('active');
+
+                if (content.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(-0.38turn);`;
+                    el.querySelector('.al-production-plus').style.cssText = `align-items: end;`;
                 }
-            });
-        } else {
-            // Настольный режим — раскрыто по умолчанию
-            content.classList.remove('active');
-            content.style.cssText = `overflow: visible; max-height: none; transition: none;`;
-            plus.style.transform = 'rotate(0deg)';
-            plusWrapper.style.alignItems = 'center';
+                else {
+                    el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(0deg); `;
+                    el.querySelector('.al-production-plus').style.cssText = `align-items:center;`;
+                    content.style.cssText = `overflow: hidden;`;
+                    content.style.maxHeight = "0px";
+                }
+            })
+        }
+
+        if (window.innerWidth >= 768) {
+            plus.classList.add('active');
+            content.style.cssText = `overflow: visible `;
+            content.style.cssText = `transition: none`;
         }
     });
-};
-
-// Инициализируем при загрузке
-window.addEventListener('DOMContentLoaded', initProductionAccordion);
-
-// И при ресайзе
-window.addEventListener('resize', () => {
-    // Добавим debounce, чтобы не вызывалось слишком часто
-    clearTimeout(window._productionResizeTimer);
-    window._productionResizeTimer = setTimeout(() => {
-        initProductionAccordion();
-    }, 150);
-});
+})
 /*----//----Production----//----*/
 
 
