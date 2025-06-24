@@ -582,7 +582,7 @@ a[href*="mailto:"] {
   gap: 20px;
 }
 .al-foto-block__item--1 {
-  background-image: url(../../img/rectangle_24.png);
+  background-image: url(../img/rectangle_24.png);
   background-repeat: no-repeat;
   width: 520px;
   height: 361px;
