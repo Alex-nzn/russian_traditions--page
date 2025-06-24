@@ -23,10 +23,10 @@
 /*Demi-600*/
 @font-face {
     font-family: 'Avenir Next Cyr Demi';
-    src: url('/al-russian_traditions--page/fonts/demi/AvenirNextCyr-Demi.eot');
-    src: url('/al-russian_traditions--page/fonts/demi/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
-        url('/al-russian_traditions--page/fonts/demi/AvenirNextCyr-Demi.woff') format('woff'),
-        url('/al-russian_traditions--page/fonts/demi/AvenirNextCyr-Demi.ttf') format('truetype');
+    src: url('/al-russian_traditions--page/al-russian_traditions/fonts/demi/AvenirNextCyr-Demi.eot');
+    src: url('/al-russian_traditions--page/al-russian_traditions/fonts/demi/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+        url('/al-russian_traditions--page/al-russian_traditions/fonts/demi/AvenirNextCyr-Demi.woff') format('woff'),
+        url('/al-russian_traditions--page/al-russian_traditions/fonts/demi/AvenirNextCyr-Demi.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
