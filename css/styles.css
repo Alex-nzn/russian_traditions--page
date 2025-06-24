@@ -582,7 +582,7 @@ a[href*="mailto:"] {
   gap: 20px;
 }
 .al-foto-block__item--1 {
-  background-image: url(/img/rectangle_24.png);
+  background-image: url(../img/rectangle_24.png);
   background-repeat: no-repeat;
   width: 520px;
   height: 361px;
@@ -594,7 +594,7 @@ a[href*="mailto:"] {
   background-position: center;
 }
 .al-foto-block__item--2 {
-  background-image: url(/img/rectangle_25.png);
+  background-image: url(../img/rectangle_25.png);
   background-repeat: no-repeat;
   width: 520px;
   height: 361px;
@@ -606,7 +606,7 @@ a[href*="mailto:"] {
   background-position: center;
 }
 .al-foto-block__item--3 {
-  background-image: url(/img/rectangle_26.png);
+  background-image: url(../img/rectangle_26.png);
   background-repeat: no-repeat;
   width: 520px;
   height: 361px;
@@ -618,7 +618,7 @@ a[href*="mailto:"] {
   background-position: center;
 }
 .al-foto-block__item--4 {
-  background-image: url(/img/rectangle_27.png);
+  background-image: url(../img/rectangle_27.png);
   background-repeat: no-repeat;
   width: 520px;
   height: 361px;
@@ -739,25 +739,25 @@ a[href*="mailto:"] {
     padding-top: 19.5px;
   }
   .al-foto-block__item--1 {
-    background-image: url(/img/rectangle_24s.png);
+    background-image: url(../img/rectangle_24s.png);
     width: 280px;
     height: 194px;
     border-radius: 6px;
   }
   .al-foto-block__item--2 {
-    background-image: url(/img/rectangle_25s.png);
+    background-image: url(../img/rectangle_25s.png);
     width: 280px;
     height: 194px;
     border-radius: 6px;
   }
   .al-foto-block__item--3 {
-    background-image: url(/img/rectangle_26s.png);
+    background-image: url(../img/rectangle_26s.png);
     width: 280px;
     height: 194px;
     border-radius: 6px;
   }
   .al-foto-block__item--4 {
-    background-image: url(/img/rectangle_27s.png);
+    background-image: url(../img/rectangle_27s.png);
     width: 280px;
     height: 194px;
     border-radius: 6px;
@@ -1092,7 +1092,7 @@ a[href*="mailto:"] {
 }
 .al-project-carousel__wrapper {
   padding: 68px 0 42px 0;
-  background-image: url(./img/wood_bg.png);
+  background-image: url(../img/wood_bg.png);
   background-size: cover;
 }
 .al-project-carousel__wrapper h2 {
