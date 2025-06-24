@@ -1,0 +1,186 @@
+.al-foto-block {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__item {
+        &--1 {
+            background-image: url(../../img/rectangle_24.png);
+            @include foto-block__item;
+        }
+
+        &--2 {
+            background-image: url(../../img/rectangle_25.png);
+            @include foto-block__item;
+        }
+
+        &--3 {
+            background-image: url(../../img/rectangle_26.png);
+            @include foto-block__item;
+        }
+
+        &--4 {
+            background-image: url(../../img/rectangle_27.png);
+            @include foto-block__item;
+        }
+    }
+
+    &__title {
+        width: 217px;
+        height: 62px;
+        font-size: 26px;
+        line-height: 1.2;
+        font-family: 'Avenir Next Cyr Demi';
+        color: var(--color-light);
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 30px 30px;
+    }
+
+    &__btn {
+        font-size: 19px;
+        line-height: 60%;
+        font-family: 'Avenir Next Cyr Bold';
+        color: var(--color-light);
+        background-color: var(--color-foto-block-btn-bg);
+        border: 1px solid var(--color-light);
+        border-radius: 10px;
+        width: 172px;
+        height: 53px;
+        cursor: pointer;
+        padding: 20px 31px;
+        text-decoration: none;
+    }
+
+    &__btn:hover {
+        background-color: var(--color-foto-block-btn-b--hover);
+    }
+}
+
+@media(max-width:1199px) {
+    .al-foto-block {
+        & h2 {
+            font-size: getCalc(42);
+        }
+
+        &__inner {
+            gap: getCalc(20);
+        }
+
+        &__row {
+            gap: getCalc(20);
+        }
+
+        &__item--1 {
+            @include foto-block__item-1199;
+        }
+
+        &__item--2 {
+            @include foto-block__item-1199;
+        }
+
+        &__item--3 {
+            @include foto-block__item-1199;
+        }
+
+        &__item--4 {
+            @include foto-block__item-1199;
+        }
+
+        &__title {
+            width: getCalc(217);
+            height: getCalc(62);
+            font-size: getCalc(26);
+            line-height: 1.2;
+        }
+
+        &__content {
+            margin-right: getCalc(30);
+            margin-bottom: getCalc(30);
+            margin-left: getCalc(30);
+        }
+
+        &__btn {
+            font-size: getCalc(19);
+            line-height: 0.6;
+            border-radius: getCalc(10);
+            width: getCalc(172);
+            height: getCalc(53);
+            padding-top: getCalc(20);
+            padding-right: getCalc(31);
+            padding-bottom: getCalc(20);
+            padding-left: getCalc(31);
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .al-foto-block {
+        & h2 {
+            font-size: 28px;
+        }
+
+        &__inner {
+            gap: 15px;
+        }
+
+        &__row {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__content {
+            flex-direction: column;
+            margin: 15px;
+            height: 85%;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 120%;
+            width: 159px;
+        }
+
+        &__btn {
+            font-size: 18px;
+            width: 100%;
+            height: 52px;
+            text-align: center;
+            padding-top: 19.5px;
+        }
+
+        &__item {
+            &--1 {
+                background-image: url(../../img/rectangle_24s.png);
+                @include foto-block__item-767;
+            }
+
+            &--2 {
+                background-image: url(../../img/rectangle_25s.png);
+                @include foto-block__item-767;
+            }
+
+            &--3 {
+                background-image: url(../../img/rectangle_26s.png);
+                @include foto-block__item-767;
+            }
+
+            &--4 {
+                background-image: url(../../img/rectangle_27s.png);
+                @include foto-block__item-767;
+            }
+        }
+    }
+}

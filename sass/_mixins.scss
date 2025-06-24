@@ -1,0 +1,34 @@
+@function getCalc($width) {
+    @return #{$width / 12 * 1vw}
+}
+
+;
+
+@mixin foto-block__item {
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 361px;
+    display: flex;
+    align-items: end;
+    border-radius: 14px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+;
+
+@mixin foto-block__item-1199 {
+    width: getCalc(520);
+    height: getCalc(361);
+}
+
+;
+
+@mixin foto-block__item-767 {
+    width: 280px;
+    height: 194px;
+    border-radius: 6px;
+}
+
+;

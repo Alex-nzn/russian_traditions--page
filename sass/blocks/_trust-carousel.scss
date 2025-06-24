@@ -1,0 +1,107 @@
+.al-trust-carousel {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background-color: var(--trust-carousel-bg);
+    }
+
+    &__title {
+        margin: 50px 0 61px 0;
+    }
+
+    &--owl {
+        max-width: 920px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &--owl .owl-nav button img {
+        width: 12px;
+        height: 22px;
+    }
+
+    &--owl .owl-nav {
+        display: block !important;
+        margin-top: 56px;
+    }
+
+    &--owl .owl-prev {
+        left: -73px;
+    }
+
+    &--owl .owl-next {
+        right: -73px;
+    }
+
+    &__wrapper .owl-theme .owl-nav [class*=owl-]:hover {
+        background: none;
+    }
+
+    &--owl .owl-nav button img {
+        width: 12px;
+        height: 22px;
+    }
+
+    &--owl .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media(max-width:1199px) {
+    .al-trust-carousel {
+        &--owl {
+            max-width: calc(920 / 12 * 1vw);
+        }
+
+        &__title {
+            font-size: calc(42 / 12 * 1vw);
+            margin-top: calc(50 / 12 * 1vw);
+            margin-bottom: calc(61 / 12 * 1vw);
+        }
+
+        &--owl .owl-nav {
+            margin-top: calc(56 / 12 * 1vw);
+        }
+
+        &--owl .owl-prev {
+            left: calc(-73 / 12 * 1vw)
+        }
+
+        &--owl .owl-next {
+            right: calc(-73 / 12 * 1vw)
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .al-trust-carousel {
+        &__title {
+            margin: 30px 0;
+            font-size: 28px;
+        }
+
+        &--owl .owl-nav {
+            display: none !important;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            margin-bottom: 0px;
+        }
+
+        &--owl .owl-dots {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .owl-stage-outer {
+            border-radius: 10px;
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            margin: 0 7px;
+            background: var(--color-light);
+        }
+    }
+}

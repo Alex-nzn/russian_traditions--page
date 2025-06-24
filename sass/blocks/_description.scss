@@ -1,0 +1,150 @@
+.al-desc {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    &__inner h2 {
+        margin-bottom: 42px;
+    }
+
+    &-left {
+        background-color: var(--color-block-bg);
+        border-radius: 10px;
+        padding: 30px;
+        width: 563px;
+        height: 303px;
+    }
+
+    &-left p {
+        margin: 17px 0;
+    }
+
+
+    &__title {
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    &-right {
+        background-color: var(--color-desc-bg);
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 477px;
+        height: 303px;
+    }
+
+    &-right__title {
+        font-size: 24px;
+        line-height: 1.3;
+        font-family: 'Avenir Next Cyr Demi';
+        margin-top: 0
+    }
+
+    &-right__phone {
+        font-size: 38px;
+        line-height: 130%;
+        font-family: 'Avenir Next Cyr Demi';
+        color: var(--color-red);
+        text-decoration: none;
+        margin-left: 85px;
+    }
+}
+
+
+
+@media(max-width:1199px) {
+    .al-desc {
+        gap: calc(20 / 12 * 1vw);
+
+        &__inner h2 {
+            font-size: calc(42 / 12 * 1vw);
+        }
+
+        &-left {
+            border-radius: calc(10 / 12 * 1vw);
+            padding: calc(30 / 12 * 1vw);
+            width: calc(563 / 12 * 1vw);
+            height: calc(303 / 12 * 1vw);
+        }
+
+        &-left h3 {
+            font-size: calc(20 / 12 * 1vw);
+        }
+
+        &-left p {
+            margin-top: calc(17 / 12 * 1vw);
+            margin-bottom: calc(17 / 12 * 1vw);
+            font-size: calc(20 / 12 * 1vw);
+        }
+
+
+        &-left__title {
+            margin-bottom: calc(25 / 12 * 1vw);
+        }
+
+        &-right {
+            border-radius: calc(10 / 12 * 1vw);
+            padding: calc(34 / 12 * 1vw);
+            width: calc(477 / 12 * 1vw);
+            height: calc(303 / 12 * 1vw);
+        }
+
+        &-right__title {
+            font-size: calc(24 / 12 * 1vw);
+        }
+
+        &-right__phone {
+            font-size: calc(38 / 12 * 1vw);
+            margin-left: calc(85 / 12 * 1vw);
+        }
+    }
+}
+
+
+
+
+
+@media(max-width:767px) {
+    .al-desc__inner h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .al-desc {
+        flex-direction: column;
+    }
+
+    .al-desc-left {
+        width: 280px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .al-desc-left h3 {
+        font-size: 18px;
+    }
+
+    .al-desc-left p {
+        font-size: 12px;
+    }
+
+    .al-desc-right {
+        width: 280px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .al-desc-right__title {
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .al-desc-right__phone {
+        font-size: 28.26px;
+        margin-left: -1px;
+    }
+}

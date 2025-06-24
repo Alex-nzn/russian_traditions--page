@@ -1,0 +1,123 @@
+.al-project-carousel {
+    &__wrapper .owl-theme .owl-nav [class*=owl-]:hover {
+        background: none;
+    }
+
+    &__wrapper {
+        padding: 68px 0 42px 0;
+        background-image: url(../../img/wood_bg.png);
+        background-size: cover;
+
+        & h2 {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__title {
+        color: var(--color-light);
+    }
+
+    & .owl-nav {
+        display: block !important;
+    }
+
+    & .owl-nav button img {
+        width: 12px;
+        height: 22px;
+    }
+
+    & .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    & .owl-prev {
+        left: -40px;
+    }
+
+    & .owl-next {
+        right: -40px;
+    }
+
+    &-owl {
+        max-width: 986px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.al-gallery a {
+    width: 316px;
+}
+
+@media(max-width:1199px) {
+
+    .al-project-carousel {
+
+        &__wrapper {
+            padding-top: calc(68 / 12 * 1vw);
+            padding-bottom: calc(42 / 12 * 1vw);
+
+            & h2 {
+                margin-bottom: calc(9 / 12 * 1vw);
+            }
+        }
+
+        &__title {
+            font-size: calc(42 / 12 * 1vw);
+        }
+
+        & .owl-nav button img {
+            width: calc(12 / 12 * 1vw);
+            height: calc(22 / 12 * 1vw);
+        }
+
+        & .owl-prev {
+            left: calc(-40 / 12 * 1vw);
+        }
+
+        & .owl-next {
+            right: calc(-40 / 12 * 1vw);
+        }
+    }
+
+    .al-gallery {
+        max-width: calc(968 / 12 * 1vw);
+
+        & a {
+            max-width: calc(316 / 12 * 1vw);
+        }
+    }
+
+}
+
+@media(max-width:767px) {
+    .owl-dots {
+        margin-bottom: 9px;
+    }
+
+    .al-project-carousel {
+        & .owl-nav {
+            display: none !important;
+        }
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+
+        &__wrapper {
+            padding: 16px;
+
+            & h2 {
+                margin-top: 14px;
+                margin-bottom: 14px;
+            }
+        }
+
+    }
+
+}
+

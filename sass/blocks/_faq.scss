@@ -1,0 +1,200 @@
+.al-faq {
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: 219px;
+    }
+
+    &__items {
+        width: 841px;
+    }
+
+    &__item-title h3 {
+        margin: 26px 0;
+    }
+
+    &__text {
+        height: 100%;
+        width: 770px;
+        margin-top: 0;
+    }
+
+    .al-img__logo {
+        width: 87px;
+    }
+
+    &__item--on &__plus {
+        align-items: end;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--color-block-bg);
+        cursor: pointer;
+    }
+
+    &__item p {
+        padding-bottom: 26px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__item-title {
+        display: flex;
+        width: 536px;
+    }
+
+    &__plus {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__plus-img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    &__plus-img--rot {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 26px;
+    }
+
+    &__footer {
+        font-family: 'Avenir Next Cyr Demi';
+        font-size: 23px;
+        background-color: var(--color-block-bg);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 27px;
+        max-width: 779px;
+        width: 100%;
+    }
+
+    &__footer a {
+        text-decoration: underline;
+        color: var(--color-body);
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.3s;
+    }
+}
+
+
+@media(max-width:1199px) {
+    .al-faq {
+        &__logo {
+            width: calc(219 / 12 * 1vw);
+        }
+
+        &__items {
+            width: calc(841 / 12 * 1vw);
+        }
+
+        &__text {
+            width: calc(770 / 12 * 1vw);
+            font-size: calc(20 / 12 * 1vw);
+        }
+
+        .al-img__logo {
+            width: calc(87 / 12 * 1vw);
+        }
+
+        &__item-title h3 {
+            font-size: calc(24 / 12 * 1vw);
+            margin-top: calc(26/ 12 * 1vw);
+            margin-bottom: calc(26/ 12 * 1vw);
+        }
+
+        &__item p {
+            padding-bottom: calc(26 / 12 * 1vw);
+        }
+
+        &__item-title {
+            width: calc(536 / 12 * 1vw);
+        }
+
+        &__plus-img {
+            width: calc(40 / 12 * 1vw);
+            height: calc(40 / 12 * 1vw);
+        }
+
+        &__plus-img--rot {
+            width: calc(40 / 12 * 1vw);
+            height: calc(40 / 12 * 1vw);
+            margin-bottom: calc(26 / 12 * 1vw);
+        }
+
+        &__footer {
+            font-size: calc(23 / 12 * 1vw);
+            padding: calc(20 / 12 * 1vw);
+            border-radius: calc(10 / 12 * 1vw);
+            margin-top: calc(27 / 12 * 1vw);
+            max-width: calc(779 / 12 * 1vw);
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .al-faq {
+        &__inner {
+            flex-direction: column;
+        }
+
+        .al-img__logo {
+            height: 28px;
+        }
+
+        &__item-title h3 {
+            font-size: 18px;
+            margin: 10px 0 12px 0;
+        }
+
+        &__item p {
+            font-size: 12px;
+        }
+
+        &__item-title {
+            width: 253px;
+        }
+
+        &__items {
+            width: 280px;
+        }
+
+        &__text {
+            width: 253px;
+        }
+
+        &__plus-img {
+            width: 27px;
+            height: 27px;
+        }
+
+        &__plus-img--rot {
+            width: 27px;
+            height: 27px;
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+
+        &__footer {
+            font-size: 18px;
+            line-height: 120%;
+            padding: 20px;
+        }
+    }
+}
