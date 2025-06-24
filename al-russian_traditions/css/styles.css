@@ -34,10 +34,10 @@
 /*Bold-700*/
 @font-face {
     font-family: 'Avenir Next Cyr Bold';
-    src: url('/al-russian_traditions--page/fonts/bold/AvenirNextCyr-Bold.eot');
-    src: url('/al-russian_traditions--page/fonts/bold/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/al-russian_traditions--page/fonts/bold/AvenirNextCyr-Bold.woff') format('woff'),
-        url('/al-russian_traditions--page/fonts/bold/AvenirNextCyr-Bold.ttf') format('truetype');
+    src: url('/al-russian_traditions/fonts/bold/AvenirNextCyr-Bold.eot');
+    src: url('/al-russian_traditions/fonts/bold/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/al-russian_traditions/fonts/bold/AvenirNextCyr-Bold.woff') format('woff'),
+        url('/al-russian_traditions/fonts/bold/AvenirNextCyr-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
