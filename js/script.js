@@ -24,10 +24,10 @@ document.querySelectorAll('.al-faq__item').forEach((el) => {
 
 
 /*----------Production----------*/
-document.querySelectorAll('.al-production-item').forEach((el) => {
+document.querySelectorAll('.al-production__item').forEach((el) => {
 
-    let content = el.querySelector('.al-production-text-wrapper');
-    let plus = el.querySelector('.al-production-plus-img');
+    let content = el.querySelector('.al-production__item-content');
+    let plus = el.querySelector('.al-production__plus-img');
 
     if (window.innerWidth < 768) {
         plus.classList.remove('active');
@@ -40,12 +40,12 @@ document.querySelectorAll('.al-production-item').forEach((el) => {
 
             if (content.classList.contains('active')) {
                 content.style.maxHeight = content.scrollHeight + "px";
-                el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(-0.38turn);`;
-                el.querySelector('.al-production-plus').style.cssText = `align-items: end;`;
+                el.querySelector('.al-production__plus-img').style.cssText = `transform: rotate(-0.38turn);`;
+                el.querySelector('.al-production__plus').style.cssText = `align-items: end;`;
             }
             else {
-                el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(0deg); `;
-                el.querySelector('.al-production-plus').style.cssText = `align-items: center;`;
+                el.querySelector('.al-production__plus-img').style.cssText = `transform: rotate(0deg); `;
+                el.querySelector('.al-production__plus').style.cssText = `align-items: center;`;
                 content.style.cssText = `overflow: hidden;`;
                 content.style.maxHeight = "0px";
             }
@@ -71,12 +71,12 @@ document.querySelectorAll('.al-production-item').forEach((el) => {
 
                 if (content.classList.contains('active')) {
                     content.style.maxHeight = content.scrollHeight + "px";
-                    el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(-0.38turn);`;
-                    el.querySelector('.al-production-plus').style.cssText = `align-items: end;`;
+                    el.querySelector('.al-production__plus-img').style.cssText = `transform: rotate(-0.38turn);`;
+                    el.querySelector('.al-production__plus').style.cssText = `align-items: end;`;
                 }
                 else {
-                    el.querySelector('.al-production-plus-img').style.cssText = `transform: rotate(0deg); `;
-                    el.querySelector('.al-production-plus').style.cssText = `align-items:center;`;
+                    el.querySelector('.al-production__plus-img').style.cssText = `transform: rotate(0deg); `;
+                    el.querySelector('.al-production__plus').style.cssText = `align-items:center;`;
                     content.style.cssText = `overflow: hidden;`;
                     content.style.maxHeight = "0px";
                 }
