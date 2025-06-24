@@ -1092,7 +1092,7 @@ a[href*="mailto:"] {
 }
 .al-project-carousel__wrapper {
   padding: 68px 0 42px 0;
-  background-image: url(../../img/wood_bg.png);
+  background-image: url(./img/wood_bg.png);
   background-size: cover;
 }
 .al-project-carousel__wrapper h2 {
